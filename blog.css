@@ -1,0 +1,334 @@
+/*   
+Theme Name: A Thematic Child Theme
+Theme URI: http://www.jillian-fu.com/mjeans
+Description: M Jeans Childtheme
+Author: Ian Stewart
+Author URI: http://www.jillian-fu.com/mjeans
+Template: thematic
+Version: 1.0
+Tags: Thematic
+.
+Thematic is © Ian Stewart http://themeshaper.com/
+.
+*/
+
+/* Reset browser defaults */
+@import url('../thematic/library/styles/reset.css');
+
+/* Apply basic typography styles */
+@import url('../thematic/library/styles/typography.css');
+
+/* Apply a basic layout */
+@import url('../thematic/library/layouts/2c-r-fixed.css');
+
+/* Apply basic image styles */
+@import url('../thematic/library/styles/images.css');
+
+/* Apply default theme styles and colors */
+/* It's better to actually copy over default.css into this file (or link to a copy in your child theme) if you're going to do anything outrageous */
+@import url('../thematic/library/styles/default.css');
+
+/* Prepare theme for plugins */
+@import url('../thematic/library/styles/plugins.css');
+
+/*General*/
+
+a {
+    color:#990000;
+}
+
+a:link {
+    color:#990000;
+}
+
+
+a:visited {
+    color:#990000;
+}
+
+p,label {
+    color:#666666;
+    font-family:arial, sans-serif;
+    font-size:11pt;
+}
+
+.bg {
+    height:auto;
+    width:auto;
+}
+
+#main {
+    margin-left:45px;
+    width:auto;
+    padding:36px 0 22px;
+}
+
+.nav-previous {
+    color:red;
+    float:left;
+    font-family:arial;
+    font-style:normal;
+    font-weight:bold;
+    text-transform:uppercase;
+    width:50%;
+    padding-left:40px;
+}
+
+.navigation a {
+    color:#990000;
+    font-style:normal;
+    text-decoration:none;
+}
+
+/*Menu*/
+.menu {
+    background:none repeat scroll 0 0 orange;
+    font-family:arial;
+    font-size:14px;
+    margin:0 auto;
+    text-transform:uppercase;
+    width:980px;
+}
+
+#branding {
+    padding:0;
+    margin-left:20px;
+    width:200px;
+}
+
+#blog-title a{
+    background: url("images/small_logo.png") no-repeat scroll 0 0 transparent;
+    display:block;
+    text-indent:-1000px;
+    z-index:1;
+    margin-left:30px;
+}
+
+#blog-description {
+    color:black;
+    font-family:helvetica neue;
+    font-size:18px;
+    font-style:normal;
+    margin-left:100px;
+    margin-top:-30px;
+    text-transform:uppercase;
+    width:250px;
+}
+
+/*Menu Bar*/
+#access {
+    border-bottom:none;
+    background:#990000;
+    height:40px;
+    margin-top:-32px;
+    z-index:-1;
+}
+
+
+/*Menu Items*/
+.sf-menu {
+    border:none;
+    margin-left:490px;
+}
+.sf-menu li {
+    background:#990000;
+}
+
+
+/*Menu Link States*/
+.sf-menu a {
+    border: none;
+    padding:13px 30px;
+    text-decoration:none;
+    color:white;
+}
+
+.sf-menu a:hover {
+    color:#000033;
+    background:#990000;
+}
+
+.sf-menu a:active {
+    color:#000033;
+}
+#container {
+    float:left;
+}
+
+.edit-link{
+    display:none;
+}
+
+/*styling maximage*/
+img.bgmaximage {position:fixed !important;}
+
+#content {
+    background:none repeat scroll 0 0 white;
+    margin:0 0 0 10px;
+    opacity:0.9;
+    overflow:hidden;
+    width:670px;
+}
+/*Styling the blog header*/
+
+#blog-header{
+    margin-left:100px;
+    margin-top:50px;
+}
+
+#blog-header p {
+    font-size:55px;
+    text-transform:uppercase;
+    font-weight:bold;
+    color:white;
+}
+
+
+
+/*styling entry*/
+#transbox {
+    background:white;
+    opacity:0.4;
+}
+
+.title {
+    font-family:helvetica neue,sans-serif;
+    text-transform:uppercase;
+    font-size:30px;
+    color: #990000;
+    line-height:30px;
+    padding-bottom:20px;
+}
+
+
+.entry-content {
+    width:600px;
+}
+
+/*Widget*/
+
+#primary {
+    background:none repeat scroll 0 0 white;
+    border:none;
+    font-family:helvetica neue,sans-serif;
+    float:left;
+    padding:18px 0 0;
+    width:450px;
+    opacity:0.9;
+    margin-left:100px;
+}
+
+
+.aside h3 {
+    color:#990000;
+    font-size:30px;
+    font-style:normal;
+    font-weight:bold;
+    line-height:22px;
+    text-transform:uppercase;
+}
+
+/*Button Styles*/
+#buttons{
+    background-color:#990000;
+    color:white;
+    font-family:arial;
+    padding:6px;
+    text-transform:uppercase;
+    margin-left:332px;
+    margin-top:-50px;
+    width:50px;
+}
+
+
+/*Input fields in the forms*/
+input {
+    width:370px;
+}
+
+/*Pushing the title and text of the widget down*/
+
+.main-aside ul {
+padding:10px 20px 0;
+}
+
+/*Pushing the text of the widget down*/
+.aside form, .aside table {
+    padding:15px 20px 0 0;
+}
+
+/*Styling the blog items*/
+
+.entry-title {
+    text-transform:uppercase;
+    color:#990000;
+    font-size:30px;
+}
+
+.entry-title a {
+    text-transform:uppercase;
+    color:#990000;
+    font-size:30px;
+}
+
+.hentry {
+    padding:30px 0 0 40px;
+}
+
+.single .hentry {
+    padding:30px;
+}
+
+.edit {
+    display:none;
+}
+
+.entry-meta {
+    font-family:arial;
+    font-style:normal;
+}
+
+.entry-meta abbr{
+    font-size:9pt;
+    font-style:normal;
+    text-transform:uppercase;
+    letter-spacing:normal;
+    font-weight:bold;
+}
+
+.entry-utility {
+    font-size:9pt;
+    font-family:arial;
+}
+
+
+.meta-nav {
+    color:#990000;
+}
+
+.more-link{
+    color:#990000;
+    
+}
+
+#comments {
+    padding-left:40px;
+}
+
+.form-section textarea {
+    width:84%;
+}
+
+/*Styling the cloud widget*/
+
+.widget_tag_cloud {
+    padding-bottom:30px;
+}
+.widget_tag_cloud a{
+    text-decoration:none;
+    color:#990000;
+}
+    
+.widget_tag_cloud h3{
+    padding-bottom:15px;
+}
